@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - IFHA</title>
+
+    <link rel="icon" type="image/x-icon" href="~/Content/images/icon.png">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="~/Content/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="~/Content/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="~/Content/css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="~/Content/css/swiper.css" type="text/css" />
+
+    <!-- Ifha Specific Stylesheet~/Content/ -->
+    <link rel="stylesheet" href="~/Content/css/ifha.css" type="text/css" />
+    <link rel="stylesheet" href="~/Content/css/fonts.css" type="text/css" />
+    <!-- / -->
+
+    <link rel="stylesheet" href="~/Content/css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="~/Content/css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="~/Content/css/magnific-popup.css" type="text/css" />
+    <link rel="stylesheet" href="~/Content/css/et-line.css" type="text/css" />
+    <link rel="stylesheet" href="~/Content/css/responsive.css" type="text/css" />
+
+    <!-- Theme Color  -->
+    <link rel="stylesheet" href="~/Content/css/colors.css" type="text/css" />
+
+
+</head>
+<body class="stretched">
+
+
+    <div id="wrapper" class="clearfix">
+        <header id="header" class="full-header">
+
+            <div id="header-wrap">
+
+                <div class="container clearfix">
+
+                    <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+                    <!-- Logo
+                    ============================================= -->
+                    <div id="logo">
+                        <a href="~/Home/index" class=""><img src="~/Content/images/logo.svg" style="padding: 16px; margin: auto;" alt="Canvas Logo"></a>
+                    </div><!-- #logo end -->
+                    <!-- Primary Navigation
+                    ============================================= -->
+                    <nav id="primary-menu">
+
+                        <ul>
+                            <li class="current"><a href="~/Home/index"><div>Home</div></a></li>
+                            <li><a href="~/Home/About"><div>About</div></a></li>
+                            <li><a href="~/Home/Service"><div>Products & Services</div></a></li>
+                            <li><a href="~/Home/Portfolio"><div>Portfolio</div></a></li>
+                            <li><a href="~/Home/Contact"><div>Contact</div></a></li>
+                        </ul>
+
+
+                    </nav><!-- #primary-menu end -->
+
+                </div>
+
+            </div>
+
+        </header>
+        <!-- #header end -->
+        @RenderBody()
+
+        <footer id="footer" class="noborder bg-light ">
+
+            <div class="container clearfix py-4">
+
+                <!-- Footer Widgets -->
+                <div class="row py-5">
+                    <div class="col-md-6">
+
+                        <div class="">
+
+                            <img src="~/Content/images/logo.svg" style="width: 150px;" alt="" class="d-block mb-3 mt-1">
+
+                            <p class="mb-0">IFHA is a name synonymous with originality, creativity and an endeavor towards perfection. Since its inception, we are diversily identifying and fulfilling market needs.</p>
+
+                        </div>
+
+                    </div>
+                    <div class="align-self-center col-md-6">
+                        <div class="clearfix row" style="padding: 10px 0; background: url('images/world-map.png') no-repeat center center;">
+                            <div class="col-md-6">
+                                <address class="nobottommargin">
+                                    <p title="Headquarters" class="text-purple" style="display: inline-block;margin-bottom: 7px;"><strong>Headquarters:</strong></p><br>
+                                    Plot # 667 / W1, North Karachi Industrial Area Sector 16-C Gabol Colony, Karachi, Karachi City, Sindh 75850
+                                </address>
+                            </div>
+                            <div class="col-md-6 pl-lg-5">
+                                <abbr class="text-purple text-decoration-none pb-2" title="Phone Number"><strong>Phone:</strong></abbr> 0313-2212791<br>
+
+                                <abbr class="text-purple text-decoration-none pb-2" title="Email Address"><strong>Email:</strong></abbr> info@ifhaenterprises.com
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        <div class="bg-white font-weight-bolder p-2 text-center text-purple">
+            <p class="mb-0">Copyrights © 2021 All Rights Reserved <a class="text-dark" href="http://airtechsolutions.pk/">( Powered By Airtech Solutions )</a></p>
+        </div>
+        </footer><!-- #footer end -->
+    </div>
+
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <!-- External JavaScripts
+    ============================================= -->
+    <script src="~/Content/js/jquery.js"></script>
+    <script src="~/Content/js/plugins.js"></script>
+
+    <!-- Footer Scripts
+    ============================================= -->
+    <script src="~/Content/js/functions.js"></script>
+    @RenderSection("scripts", required: false)
+
+    <script>
+        // Owl Carousel Scripts
+        $('#oc-features').owlCarousel({
+            items: 1,
+            margin: 60,
+            nav: true,
+            navText: ['<i class="icon-line-arrow-left"></i>', '<i class="icon-line-arrow-right"></i>'],
+            dots: false,
+            stagePadding: 30,
+            responsive: {
+                768: { items: 2 },
+                1200: { stagePadding: 200 }
+            },
+        });
+    </script>
+
+</body>
+</html>
